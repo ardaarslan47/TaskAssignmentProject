@@ -69,7 +69,7 @@ const loginUser = asyncHandler(async (req, res) => {
     });
     res.redirect("/");
   } else {
-    res.status(401);
+    res.status(400);
     throw new Error("Username or password is not valid");
   }
   res.status(500);
