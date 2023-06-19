@@ -4,12 +4,18 @@ const bcrypt = require("bcrypt");
 const User = require("../models/users");
 
 const loginPage = asyncHandler(async (req, res) => {
-  if (req.cookies.hasOwnProperty("error")) {
-    const message = req.cookies.error;
-    res.clearCookie("error"); // Clear the 'error' cookie after retrieving its value
-    return res.render("login", { message });
+  try {
+    if (req.cookies.error) {
+      const message = req.cookies.error;
+      res.clearCookie("error"); // Clear the 'error' cookie after retrieving its value
+      return res.render("login", { message });
+    }
+    res.render("login");
+  } catch (error) {
+    // Handle the error
+    res.status(500);
+    throw new Error(`${error}`);
   }
-  res.render("login");
 });
 
 const registerUser = asyncHandler(async (req, res) => {
