@@ -1,5 +1,3 @@
-<div style="text-align: center">
-
 # Task Assignment Project
 
 This project is a simple task assignment application that allows users to track tasks with **full crud** functionality.
@@ -8,29 +6,27 @@ This project is a simple task assignment application that allows users to track 
 
 ## Features
 
-Create, read, delete, update tasks\
-Sign in / register for display your tasks\
-Fully editable rows to using for another purposes
+* Create, read, delete, update tasks
+* Sign in / register for display your tasks
+* Fully editable rows to using another purposes
 
 ## Used Technologies
 
-node.js\
-express.js\
-nodemon\
-dotenv\
-mongoose\
-bcrypt\
-ejs\
-exspress-async-handler\
-jsonwebtoken
+* node.js
+* express.js
+* nodemon
+* dotenv
+* mongoose
+* bcrypt
+* ejs
+* exspress-async-handler
+* jsonwebtoken 
 
 ### Deployment: Render
 
 ---
 
 ## Installation:
-
-</div>
 
 ```
 % git clone https://github.com/ardaarslan47/TaskAssignmentProject.git
